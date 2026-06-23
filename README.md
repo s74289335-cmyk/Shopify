@@ -16,6 +16,17 @@ This project demonstrates a Shopify storefront integrated with a backend pricing
 * Health Monitoring Endpoint
 * Render Cloud Deployment
 
+Shopify Theme Integration
+
+The ZIP pricing widget was added to Shopify's main-product.liquid template.
+
+Frontend Flow:
+1. Customer enters ZIP code
+2. JavaScript captures Product ID and Variant ID
+3. Request sent to Render API
+4. API returns calculated price
+5. Price displayed on product page
+
 ## Architecture
 
 Customer
@@ -74,6 +85,12 @@ Health Endpoint:
 Analytics Endpoint:
 
 /api/stats
+
+Live API URL:
+https://name-zip-pricing-api.onrender.com
+
+Health Check:
+https://name-zip-pricing-api.onrender.com/api/health
 
 ## Author
 
